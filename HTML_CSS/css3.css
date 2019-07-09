@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font: 14px/1.6 '돋움',dotum, Arial, Helvetica, sans-serif;
+}
+
+.article{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.header{
+    background: url('bg-head.png') repeat #d6f3fc;
+}
