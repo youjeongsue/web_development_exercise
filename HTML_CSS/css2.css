@@ -1,0 +1,44 @@
+body{
+    background-color: #333333;
+    color:white;
+    font-family: "돋움", dotum, "굴림", arial, sans-serif;
+}
+p{
+    color: red;
+}
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    color: violet;
+}
+div p{
+    color: blue;
+}
+
+strong{
+    background-color: #552276;
+}
+
+#abc{
+    color: red;
+}
+
+p, #abc{
+    color: red;
+}
+
+.abc{
+    color: moccasin;
+}
+
+p.box{
+    font-size: 2em;
+}
+
+.box2 .name{
+    color: yellow;
+}
+
+#side-box .box2 span{
+    color: black;
+}
