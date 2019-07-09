@@ -1,0 +1,19 @@
+body{
+    background-color: #333333;
+    color:white;
+}
+p{
+    color: red;
+}
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    color: violet;
+}
+div p{
+    color: blue;
+}
+
+strong{
+    background-color: #552276;
+}
