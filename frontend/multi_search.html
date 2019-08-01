@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="EUC-KR">
+        <title>multiSearch1</title>
+        <script type="text/javascript">
+        function multiTable(){
+            var numOfUser = window.prompt("몇 명인가요?","");
+
+            for(var i=0;i<parseInt(numOfUser);i++){
+                var textBox = document.createElement("input");
+                var newLine = document.createElement("br");
+                textBox.type = "div";
+
+                document.body.appendChild(textBox);
+                document.body.appendChild(newLine);
+            }
+        }
+        </script>
+    </head>
+    <body onload="multiTable()">
+        <h2>multisearch</h2>
+    </body>
+</html>
