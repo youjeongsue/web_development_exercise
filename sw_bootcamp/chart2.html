@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+    </style>
+    <title>D3 연습2</title>
+</head>
+<body>
+    <span class="chart"></span>
+    <script>
+        const width = 500;
+        const height = 500;
+        const data=d3.csv("winequality.csv");
+
+        function get_data(){
+            const result = data.then(function(values){
+                return values;
+            })
+            return result;
+        }
+
+        const data_ = get_data();
+
+        console.log(data_);
+
+        const arc = d3.arc().innerRadius(150).outerRadius(Math.min(width, height)/2);
+
+        //label이 위치할 반지름 위치
+        const arcLabel = (() => {
+            const radius = Math.min(width, height) / 2 * 0.8;
+            return d3.arc().innerRadius(radius).outerRadius(radius);
+        })();
+
+        const pie = d3.pie()
+            .sort((a,b) => b.value - a.value)
+            .value(d => d.value);
+
+        const arcs = pie(data);
+
+        console.log(pie);
+    </script>
+</body>
+</html>
